@@ -36,6 +36,7 @@ Pages:
   7. /cart - Cart
 
   Private User Routes
+  
   8. /checkout?items=[{"id":product_id, "amount":1}] - Checkout
   9. /user - UserLayout
   10. user/profile index - Profile
