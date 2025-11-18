@@ -1,16 +1,42 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+E-Commerce SPA Template v0
 
-Currently, two official plugins are available:
+Live Preview Link: 
+Figma Design Link:
+Assets Link: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend Stack (vite: 7.1.7, react: 19.1.1)  
+  1. tailwindcss: 4.1.14
+  2. @tailwindcss/vite: 4.1.14
+  3. react-router: 7.9.4
+  4. react-hot-toast: 2.6.0
+  5. react-use: 17.6.0
 
-## React Compiler
+Packages:
+  npm install tailwindcss @tailwindcss/vite react-router react-hot-toast react-use
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Entities:
+  1. Admin
+  2. Product
+  3. User (cart, favorites)
+  4. Address
+  5. Order
 
-## Expanding the ESLint configuration
+Store:
+  -
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Pages:
+  1. / - Layout
+  2. / index - Home
+  3. /category/:slug-id - CategoryProducts
+  4. /search?query={query} - SearchProducts
+  5. /product/:slug-id - ProductDetails
+  6. /favorites - Favorites
+  7. /cart - Cart
+
+  Private User Routes
+  8. /checkout?items=[{"id":product_id, "amount":1}] - Checkout
+  9. /user - UserLayout
+  10. user/profile index - Profile
+  11. user/orders - Orders
